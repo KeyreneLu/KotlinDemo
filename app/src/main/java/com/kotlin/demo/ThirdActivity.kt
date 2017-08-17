@@ -3,6 +3,7 @@ package com.kotlin.demo
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_third.*
+import org.jetbrains.anko.toast
 
 class ThirdActivity : AppCompatActivity() {
     var StringArray: Array<String> = arrayOf("how", "are", "you")
@@ -100,6 +101,37 @@ class ThirdActivity : AppCompatActivity() {
             index++
 //            val text = origin.substring(3)
 //            mTvResult.text = "字符截取结果:$text"
+        }
+
+        mBtnSubFor.setOnClickListener {
+//            for从0开始遍历循环遍历
+            //            for (x in StringArray.indices step 1){
+//                toast(StringArray[x])
+//            }
+            //for从末尾开始遍历循环遍历  ，downto代表减至0  step每次加减2
+//            for (x in StringArray.size downTo 0 step 2){
+//                toast(StringArray[x-1])
+//            }
+//            for循环，不包含10
+//            for (x in 1 until 10 step 1){
+//                toast(x.toString())
+//            }
+//            map循环遍历
+            val map = mapOf("a" to 1, "b" to 2, "c" to 3)
+            for ((k,v) in map){
+                toast(k+"---"+v.toString())
+            }
+        }
+
+        mBtnSubChoose.setOnClickListener {
+            val fruits = listOf("banana", "avocado", "apple", "kiwi")
+
+            fruits
+                    .filter { it.startsWith("a") }//以a开头的
+                    .sortedBy { it }//排序
+                    .map { it.toUpperCase() }//大写
+                    .forEach { toast(it) }//遍历
+
         }
     }
 

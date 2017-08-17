@@ -107,4 +107,16 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="subString"/>
+
+    <Button
+        android:id="@+id/mBtnSubFor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FOR循环"/>
+
+    <Button
+        android:id="@+id/mBtnSubChoose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="条件筛选"/>
 </LinearLayout>
