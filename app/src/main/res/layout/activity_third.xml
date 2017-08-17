@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="6dp"
+    android:paddingRight="6dp"
+    tools:context="com.kotlin.demo.ThirdActivity">
+
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        
+        >
+        <TextView
+            android:padding="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="数组元素列表"/>
+        <TextView
+            android:id="@+id/mTvArray"
+            android:padding="5dp"
+            android:textColor="#ff0000"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        
+        
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/mBtnInt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="整型数组"/>
+
+        <Button
+            android:id="@+id/mBtnLong"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="长整型数组"/>
+
+        <Button
+            android:id="@+id/mBtnFloat"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="浮点数组"/>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        
+        
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/mBtnDouble"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="双精度数组"/>
+
+        <Button
+            android:id="@+id/mBtnBoolean"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="布尔数组"/>
+
+        <Button
+            android:id="@+id/mBtnChar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="字符数组"/>
+    </LinearLayout>
+    <Button
+        android:id="@+id/mBtnString"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="字符串数组"/>
+
+    <TextView
+        android:id="@+id/mTvOrigin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="原字符："
+        android:padding="5dp"/>
+    
+    <TextView
+        android:id="@+id/mTvResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="字符截取结果："
+        android:padding="5dp"/>
+
+    <Button
+        android:id="@+id/mBtnSubString"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="subString"/>
+</LinearLayout>
